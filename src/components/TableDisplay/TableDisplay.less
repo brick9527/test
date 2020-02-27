@@ -1,0 +1,129 @@
+.mosaic-columns {
+  grid-template-columns: repeat(4, 9.5%) repeat(4, 12%) 10% 4%;
+}
+
+.namespace-columns {
+  grid-template-columns: 13% auto 14% 14% 14% 18% 4%;
+  .name-header {
+    text-align: left;
+  }
+
+  .name-cell {
+    text-align: left;
+  }
+}
+
+.hexId-header {
+  text-align: left;
+}
+
+.name-header {
+  text-align: left;
+}
+
+.divisibility-header {
+  text-align: center;
+}
+
+.transferable-header {
+  text-align: center;
+}
+
+.supplyMutable-header {
+  text-align: center;
+}
+
+.restrictable-header {
+  text-align: center;
+}
+
+.hexId-cell {
+  text-align: left;
+}
+
+.name-cell {
+  text-align: left;
+}
+
+.divisibility-cell {
+  text-align: center;
+}
+
+.transferable-cell {
+  text-align: center;
+}
+
+.supplyMutable-cell {
+  text-align: center;
+}
+
+.restrictable-cell {
+  text-align: center;
+}
+
+.table-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-rows: 0.8rem 0.6rem auto 0.6rem;
+  grid-template-columns: 100%;
+  font-size: 0.16rem;
+
+  .upper-section-container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 100%;
+    grid-template-columns: 70% 30%;
+
+    .table-title-container {
+      padding-left: 0.1rem;
+    }
+
+    .table-actions-container {
+      text-align: right;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-auto-rows: 50%;
+      cursor: pointer;
+    }
+  }
+
+  .table-header-container {
+    display: grid;
+    width: 100%;
+    text-align: right;
+
+    .table-header-item {
+      padding: 0.1rem;
+      font-weight: 600;
+      cursor: pointer;
+
+      .header-label {}
+
+      .sort-icon {}
+    }
+  }
+
+  .table-body-container {
+    text-align: right;
+
+    .table-rows-container {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-auto-rows: .7rem;
+      grid-template-columns: 100%;
+    }
+
+    .empty-container {
+      padding: 1rem;
+      text-align: center;
+    }
+  }
+
+  .table-footer-container {
+    text-align: center;
+    padding-top: 0.2rem;
+  }
+}
